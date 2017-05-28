@@ -1,0 +1,24 @@
+/*img{*/
+/*max-width: 100%;*/
+    /*height: auto;*/
+/*}*/
+#logo{
+    display: block;
+    margin: auto;
+    width: 80px;
+}
+#videoList li{
+    cursor: pointer;
+}
+#videoList img{
+    margin: 8px;
+    padding: 3px;
+    border: 1px solid #cccccc;
+}
+#videoList h3{
+    margin-left: 10px;
+}
+#showVideo{
+     width: 100%;
+    margin: 15px 0px 15px 0px;
+}

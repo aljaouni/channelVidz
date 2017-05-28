@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <title>ChannelVidz</title>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="main">
+        <div data-role="header">
+            <h1>ChannelVidz</h1><a href="#options" data-icon="gear" class="ui-btn-right">Option</a>
+        </div>
+        <div data-role="content">
+            <img id="logo" src="img/logo.png">
+            <div id="showVedio"></div>
+            <br><br>
+            <ul id="videoList" data-role="listView">
+
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h4>ChannelVidz &copy; 2017</h4>
+        </div>
+        <div data-role="popup" data-history="false" id="popupDialog" data-overlay-theme="a"  data-theme="c" data-dismissible="false" data-position-to="window" data-transition="turn" style="max-width: 400Px" class="ui-corner-all">
+            <div data-role="header" data-theme="a" class="ui-corner-top">
+                <h1>Add Chanel</h1>
+            </div>
+            <div data-role="content" data-theme="d" class="ui-corner-buttom ui-content">
+                <h3 class="ui-title">Please Enter a Channel name</h3>
+                <input type="text" id="channelName" placeholder="Channel Name"/>
+                <a id="channelBtnCancel" href="" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>
+                <a id="channelBtnOk" href="" data-role="button" data-inline="true" data-rel="back" data-transition="flow">Ok</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="options">
+        <div data-role="header">
+            <a href="#main" data-icon="delete" >Cancel</a><h1>Options</h1><a href="#" data-icon="check " id="saveOPtions" data-theme="b">Save</a>
+        </div>
+        <div data-role="content">
+            <div data-role="fieldcontain  ">
+                <label for="channelNameOptions">Channel Name :  </label>
+                <input type="text" name="channelNameOptions" id="channelNameOptions" placeholder="Enter Channel Name">
+                <div class="ui-btn ui-input-btn ui-shadow">
+                    Clear Channel
+                    <input type="button" id="clearChannel" data-corners="false" data-enhanced="true" value="Clear Channel">
+                </div>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="maxResutlsOptions">Max Results :  </label>
+                <input type="number" name="maxResutlsOptions" id="maxResutlsOptions" placeholder="Enter max Results">
+            </div>
+        </div>
+        <div data-role="footer">
+            <h4>ChannelVidz &copy; 2017</h4>
+        </div>
+    </div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
